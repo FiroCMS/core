@@ -1,0 +1,77 @@
+%o-split,
+.o-split {
+    @extend %clearfix;
+
+    > * {
+        float: left;
+    }
+
+    > * + * {
+        float: right;
+    }
+}
+
+%o-split--table,
+.o-split--table {
+    display: table;
+    width: 100%;
+    text-align: center;
+
+    &:after {
+        content: none !important;
+    }
+
+    > * {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    > :first-child {
+        text-align: left;
+    }
+
+    > :last-child {
+        text-align: right;
+    }
+}
+
+.o-split--input,
+%o-split--input {
+    display: table;
+    white-space: nowrap;
+
+    > * {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
+
+        &:first-child,
+        &:first-child input {
+            width: 100%;
+        }
+
+        &:last-child {
+            padding-left: 8px;
+        }
+    }
+}
+
+%o-split--responsive,
+.o-split--responsive {
+    @include media-query(sm) {
+        display: block;
+
+        > * {
+            display: block;
+
+            & + * {
+                margin-top: 8px;
+            }
+
+            &:last-child {
+                padding-left: 0;
+            }
+        }
+    }
+}

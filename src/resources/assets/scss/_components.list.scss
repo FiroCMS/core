@@ -1,0 +1,15 @@
+.c-list {
+    @extend %o-list-bare;
+
+    &__item {
+        @extend %u-clearfix;
+        @extend %o-split;
+        @extend %o-split--table;
+
+        & + * {
+            padding-top: 10px;
+            border-top:1px solid #e5e5e5;
+            margin-top: 10px;
+        }
+    }
+}

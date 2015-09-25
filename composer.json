@@ -1,0 +1,21 @@
+{
+    "name": "FiroCMS/core",
+    "description": "FiroCMS core files",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kasper Mikiewicz",
+            "email": "kasper.mikiewicz@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FiroCMS\\firocms\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5",
+        "illuminate/html": "~5.0"
+    }
+}

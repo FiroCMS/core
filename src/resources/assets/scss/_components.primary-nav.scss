@@ -1,0 +1,26 @@
+.c-primary-nav {
+    @extend %o-nav;
+
+    &__item {
+        display: inline-block;
+        margin-right: 7px;
+        margin-right: 30px;
+    }
+
+    &__link {
+        display: inline-block;
+        vertical-align: top;
+        color: #666;
+        font-size: 14px;
+        font-weight: 700;
+
+        &:hover {
+            color: $c-primary;
+            text-decoration: none;
+        }
+
+        .is-active & {
+            color: $c-primary;
+        }
+    }
+}

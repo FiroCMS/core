@@ -1,0 +1,55 @@
+//.c-sidebar {
+//    width: $sidebar-width;
+//    font-size: 13px;
+//    height: 100%;
+//    overflow: auto;
+//    background: #1d252f;
+//    padding: 15px 15px 15px 30px;
+//    position: absolute;
+//    top: 0;
+//    bottom: 0;
+//    left: 0;
+//
+//    &__title {
+//        text-transform: uppercase;
+//        font-weight: bold;
+//        color: #111;
+//        font-size: inherit;
+//        margin-top: 1em;
+//        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+//    }
+//
+//    &__nav {
+//        @extend %o-nav;
+//
+//        a {
+//            font-size: 13px;
+//            color: #a6acbc;
+//            font-weight: 600;
+//            padding: 7px 0;
+//            display: block;
+//            transition: color .25s;
+//            position: relative;
+//
+//            &:hover {
+//                color: #fff;
+//                text-decoration: none;
+//            }
+//        }
+//
+//        .is-active a {
+//            color: #fff;
+//
+//            &:before {
+//                content: '';
+//                position: absolute;
+//                top: 50%;
+//                transform: translate(-18px, -4px);
+//                background: $c-positive;
+//                border-radius: 1em;
+//                width: 6px;
+//                height: 6px;
+//            }
+//        }
+//    }
+//}

@@ -1,0 +1,11 @@
+$breakpoints: (
+        xsm        "screen and (max-width: 679px)",
+        sm        "screen and (min-width: 680px) and (max-width: 869px)",
+        sm\+      "screen and (min-width: 680px)",
+        sm-      "screen and (max-width: 869px)",
+        md        "screen and (min-width: 870px) and (max-width: 1230px)",
+        md\+      "screen and (min-width: 870px)",
+        md-      "screen and (max-width: 1230px)",
+        lg        "screen and (min-width: 1231px)",
+        retina    "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)"
+);

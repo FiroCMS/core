@@ -1,0 +1,61 @@
+.c-btn {
+    border: 0;
+    font-weight: 600;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.475;
+    font-size: 14px;
+    padding: 10px 16px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        box-shadow: inset 0 -8em 0 rgba(255, 255, 255, .2);
+    }
+
+    &:active {
+        box-shadow: inset 0 -8em 0 rgba(0, 0, 0, .1);
+    }
+}
+
+/**
+ * Colors
+ */
+.c-btn--primary {
+    background: $c-primary;
+    color: #fff;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.c-btn--positive {
+    background: $c-positive;
+    color: #fff;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/**
+ * Sizes
+ */
+.c-btn--small {
+    padding: 6px 10px;
+}
+
+.c-btn--large {
+    padding: 11px 24px;
+
+    &.u-milli {
+        line-height: 20px;
+    }
+}
